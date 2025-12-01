@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>clashroyale</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <nav class="side-nav">
+        <a href="#home">Home</a>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#cards">Cards</a>
+        <a href="#progression & arenas">Progression & Arenas</a>
+        <a href="#community & events">Community & Events</a>
+    </nav>
+
+    <main>
+        <section id="home" class="panel">
+            <parallax> 
+            <img src="./assets/CLASH ROYALE background.webp" alt="" data-parallax ="-0.1" data-mouse data-scroll>    
+            </parallax>
+            <img src="./assets/main_logo_clashroyale.5e3fbb70__1_.webp" id="clashLogo" alt="Clash Royale logo">
+        </section>
+
+        <section id="gameplay" class="panel">
+            <h1>Gameplay</h1>
+            <div class="grid"> 
+                <div class="left">  
+                <video id="gameplayVideo" src="./assets/Clash Royale Gameplay Clip.mp4" loop></video>
+                <button id="playPause" onclick="pausePlay()">Play</button>
+                
+                </div>
+                <div class="right">  
+                    <h2>What is Clash Royale?</h2>
+                    <p>Clash Royale is a real-time multiplayer game where players collect and upgrade cards featuring Clash of Clans troops, spells, and defenses. The objective is to destroy the opponent's towers while defending your own. Players deploy cards onto the battlefield using elixir, which regenerates over time. The game features various modes, including 1v1 battles, 2v2 battles, and special events. Players can join clans to share cards and participate in clan wars. Strategy and quick decision-making are key to winning battles and climbing the ranks in this fast-paced game.</p>
+                </div>
+            </div>    
+
+        </section>
+
+        <section id="cards" class="panel">
+            <h1>Cards</h1>
+            <div class="grid"> 
+                <div class="left">  
+                    <h2>Card Types</h2>
+                    <p>In Clash Royale, there are five main types of cards: Troops, Spells, Buildings, Champions, and Heroics. Troops are units that can be deployed on the battlefield to attack enemy structures and defend your own. Spells are magical abilities that can be cast to damage enemies or support your troops. Buildings are structures that can be placed on the battlefield to defend against enemy attacks or generate resources. Champions are powerful units with unique abilities that can turn the tide of battle. Heroics are troops gaining the unique ability to have powers like Champions. Each card has its own elixir cost, rarity, and level, which affect its performance in battles.</p>
+                    <h2 id="cardInfoTitle"></h2>
+                    <p id="cardInfoContent"></p>
+                </div>
+                <div class="right"> 
+                    <carousel data-start-card="0" data-card-width="450px" data-card-height="600px"> 
+                        <card>
+                            <h1>Troops:</h1>
+                            <div><img src="assets/MiniPEKKACard.webp" alt="Troops"></div>
+                        </card>
+                        <card>
+                            <h1>Spells:</h1>
+                             <div><img src="assets/RageCard.webp" alt="Spells"></div>
+                        </card>
+                        <card>
+                            <h1>Buildings:</h1>
+                             <div><img src="assets/TeslaCard.webp" alt="Buildings"></div>
+                        </card>
+                        <card>
+                            <h1>Champions:</h1>
+                             <div><img src="assets/ArcherQueenCard.webp" alt="Champions"></div>
+                        </card>
+                         <card>
+                            <h1>Heroics:</h1>
+                             <div><img src="assets/HeroicKnightCard.webp" alt="Heroics"></div>
+                        </card>
+                    <button id="next">Next</button>
+                    <button id="prev">Prev</button>
+                    </carousel> 
+                 
+                </div>
+        </section>
+
+        <section id="progression & arenas" class="panel">
+            <h1>Progression & Arenas</h1>
+            <p>In Clash Royale, the arena system is the core of your progression. As you battle other players and earn trophies, you climb through a series of unique arenas—each with its own theme, difficulty level, and card unlocks. Every arena represents a new milestone in your journey and rewards you with access to stronger cards, better chests, and more advanced strategies. Progressing through the arenas isn't just about winning matches—it's about learning how the game evolves. Early arenas introduce basic units and spells, while higher arenas unlock complex mechanics, advanced troops, and meta-defining cards. As you climb, matchmaking becomes more competitive, pushing you to refine your deck, time your elixir efficiently, and adapt to different playstyles. Whether you're a beginner learning the fundamentals or a veteran aiming for Legendary Arena, the arena roadmap is your guide through Clash Royale's competitive ladder. Explore the full list of arenas below to see trophy requirements, key unlocks, and what challenges await you next..</p>
+          <table class="arena-table">
+  <thead>
+    <tr>
+      <th>Arena</th>
+      <th>Trophy Range</th>
+      <th>Key Unlocks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Goblin Stadium (Arena 1)</td><td>0 - 300</td>
+      <td>Starter cards, basic unlocks</td></tr>
+
+    <tr><td>Bone Pit (Arena 2)</td><td>300 - 600</td>
+      <td>Bomber, Skeletons, Tombstone, Valkyrie etc. unlocked</td></tr>
+
+    <tr><td>Barbarian Bowl (Arena 3)</td><td>600 - 1000</td>
+      <td>Barbarians, Battle Ram, Cannon, Mega Minion etc. unlocked</td></tr>
+
+    <tr><td>Spell Valley (Arena 4)</td><td>1000 - 1300</td>
+      <td>Spell-cards become common (more varied deck options)</td></tr>
+
+    <tr><td>Builder's Workshop (Arena 5)</td><td>1300 - 1600</td>
+      <td>Access to building/defensive-cards and higher tier rewards</td></tr>
+
+    <tr><td>P.E.K.K.A's Playhouse (Arena 6)</td><td>1600 - 2000</td>
+      <td>Heavy-troop and mid-tier unlocks</td></tr>
+
+    <tr><td>Royal Arena (Arena 7)</td><td>2000 - 2300</td>
+      <td>Royal-themed cards, more balanced meta decks</td></tr>
+
+    <tr><td>Frozen Peak (Arena 8)</td><td>2300 - 2600</td>
+      <td>Ice/spell cards, tougher matchmaking</td></tr>
+
+    <tr><td>Jungle Arena (Arena 9)</td><td>2600 - 3000</td>
+      <td>Jungle-themed cards, more advanced card pool</td></tr>
+
+    <tr><td>Hog Mountain (Arena 10)</td><td>3000 - 3400</td>
+      <td>Fast-attack cards (f.eks. Hog Rider), mid-tier meta</td></tr>
+
+    <tr><td>Electro Valley (Arena 11)</td><td>3400 - 3800</td>
+      <td>Electric / stun-cards unlocked, more complex decks</td></tr>
+
+    <tr><td>Spooky Town (Arena 12)</td><td>3800 - 4200</td>
+      <td>Dark / magic-cards, higher level chests</td></tr>
+
+    <tr><td>Rascal's Hideout (Arena 13)</td><td>4200 - 4600</td>
+      <td>New card unlocks, more reward richness</td></tr>
+
+    <tr><td>Serenity Peak (Arena 14)</td><td>4600 - 5000</td>
+      <td>Advanced cards and unlocks, meta decks deepen</td></tr>
+
+    <tr><td>Miner's Mine (Arena 15)</td><td>5000 - 5500</td>
+      <td>Miner-related cards unlocked, potion for advanced tactics</td></tr>
+
+    <tr><td>Executioner's Kitchen (Arena 16)</td><td>5500 - 6000</td>
+      <td>High-tier cards, more varied strategies</td></tr>
+
+    <tr><td>Royal Crypt (Arena 17)</td><td>6000 - 6500</td>
+      <td>Elite cards, stronger chests / rewards</td></tr>
+
+    <tr><td>Silent Sanctuary (Arena 18)</td><td>6500 - 7000</td>
+      <td>Rare unlocks, advanced meta possible</td></tr>
+
+    <tr><td>Dragon Spa (Arena 19)</td><td>7000 - 7500</td>
+      <td>Dragon / flying-cards, more card variety</td></tr>
+
+    <tr><td>Boot Camp (Arena 20)</td><td>7500 - 8000</td>
+      <td>High-tier unlocks, strong competition</td></tr>
+
+    <tr><td>Clash Fest (Arena 21)</td><td>8000 - 8500</td>
+      <td>Extended rewards, access to rare cards</td></tr>
+
+    <tr><td>PANCAKES! (Arena 22)</td><td>8500 - 9000</td>
+      <td>Near-endgame unlocks, meta decks stable</td></tr>
+
+    <tr><td>Valkalla (Arena 23)</td><td>9000 - 9500</td>
+      <td>New high-tier Arena</td></tr>
+
+    <tr><td>Legendary Arena (Arena 24)</td><td>9500 - 10000</td>
+      <td>Top-tier cards, best chests & rewards</td></tr>
+  </tbody>
+</table>
+
+
+        </section>
+
+        <section id="community & events" class="panel">
+            <h1>Community & Events</h1>
+            <p>community & events content heres.</p>
+
+<div class="cr-community-grid">
+    <div class="cr-box">
+        <h3>Special Events</h3>
+        <p>Limited-time challenges players can join.</p>
+        <p><b>Examples:</b> Draft, Triple Elixir</p>
+    </div>
+
+    <div class="cr-box">
+        <h3>Seasonal Challenges</h3>
+        <p>Monthly events tied to the seasonal theme.</p>
+        <p><b>Examples:</b> Season Tower, Seasonal Quests</p>
+    </div>
+
+    <div class="cr-box">
+        <h3>Tournaments</h3>
+        <p>Small competitions where players fight for rewards.</p>
+        <p><b>Examples:</b> Global Tournaments</p>
+    </div>
+
+    <div class="cr-box">
+        <h3>Clan Wars</h3>
+        <p>Clan-based battles with shared rewards.</p>
+        <p><b>Examples:</b> Clan War Battles</p>
+    </div>
+</div>
+
+<p>
+Other features not shown: Friendly Battles, Creator Events, Special Global Events. which I havent got the experience to make yet. And most of the text is AI generated.
+</p>
+
+    </main>
+</body>
+<link rel="stylesheet" href="https://ludvigdk.github.io/cars/parallax-lib/parallax.css">
+<script src="https://ludvigdk.github.io/cars/parallax-lib/parallax.js"></script>
+<script src="./index.js"></script>
+</html>
+
